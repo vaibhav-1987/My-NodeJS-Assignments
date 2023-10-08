@@ -4,6 +4,8 @@ const myFileWriter = async (fileName, fileContent) => {
 	await fs.writeFile(`${fileName}.txt`, fileContent);
 }
 
+
+
 const myFileReader = async (fileName) => {
 	const content = await fs.readFile(`${fileName}.txt`, 'utf-8');
     console.log(content);
